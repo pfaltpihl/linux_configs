@@ -13,11 +13,11 @@
 
 
 ;; global variables, stuff from
-;;http://ensime.github.io/editors/emacs/learnin/g
+;; http://ensime.github.io/editors/emacs/learnin/g
 (setq
  inhibit-startup-screen t
  create-lockfiles nil
-  column-number-mode t
+ column-number-mode t
  scroll-error-top-bottom t
  show-paren-delay 0.5
  use-package-always-ensure t
@@ -26,12 +26,18 @@
 ;; remove the C-z kill stuff
 (global-unset-key (kbd "C-z"))
 
+;; remove toolbars
+(tool-bar-mode -1)
+(menu-bar-mode -1)
+
+
+
 ;; I'm using agressive indent and Web-mode
 ;; the package manager
 (require 'package)
 (setq
  package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                    ("org" . "http://orgmode.org/elpa/")
+		    ("org" . "http://orgmode.org/elpa/")
                     ;;("melpa" . "http://melpa.org/packages/")
                     ("melpa-stable" . "http://stable.melpa.org/packages/")))
 
