@@ -50,7 +50,7 @@ set $base0F #fcc09e
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -144,7 +144,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # ensure that terminal is auto opened in the correct workspace. Class is found by xprop command, then click a window. use 2nd value
-assign [class="X-terminal-emulator"] $workspace1
+assign [class="Gnome-terminal"] $workspace1
 assign [class="Emacs24"] $workspace2
 assign [class="Firefox"] $workspace3
 
