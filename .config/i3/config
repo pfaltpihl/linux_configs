@@ -224,11 +224,11 @@ bar {
 
 
 # Start terminal on start of I3
-exec lxterminal
+exec gnome-terminal
 exec firefox
 exec emacs
 # For transparent stuff
 exec compton
 
 # Wallpaper set. exec-always is everythine you restart i3. Then you can imidiately see that the wallpaper changes without reboot
-exec_always feh --bg-fit ~/wallpapers/2014-05-20-Time-For-Thought.jpg
+exec_always feh --bg-scale ~/wallpapers/2014-05-20-Time-For-Thought.jpg

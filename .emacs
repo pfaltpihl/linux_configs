@@ -31,7 +31,6 @@
 (menu-bar-mode -1)
 
 
-
 ;; I'm using agressive indent and Web-mode
 ;; the package manager
 (require 'package)
@@ -64,3 +63,10 @@
 
 ;; Add plain HTML pages to use web-mode too
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+;; default indentation 4 spaces
+;;(setq-default tab-width 4)
+;;(setq tab-width 4)
+(setq c-basic-offset 4)
+
+
